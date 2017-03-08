@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="card card-block">
+      <div class="row">
+
+<!--         <img class="col-sm-3 text-center" ng-show="selectedService.image" ng-src="{{selectedService.image}}"> -->
+        <div class="col-sm-12">
+          <h4 ng-show="selectedService.title">{{selectedService.title}}</h4>
+          <div ng-show="selectedService.locationCity" class="bottomMarg">{{selectedService.locationCity}}, {{selectedService.locationState}}</div>
+          <div ng-show="selectedService.rate">Service Rate: {{selectedService.rate}}</div>
+          <div ng-show="selectedService.mainGenre">Main Genre: {{selectedService.mainGenre}}</div>
+          <div ng-show="selectedService.secondaryGenre">Secondary Genre: {{selectedService.secondaryGenre}}</div>
+          <div ng-show="selectedService.mainSkill">Main Skill: {{selectedService.mainSkill}}</div>
+          <div ng-show="selectedService.secondarySkill">Secondary Skill: {{selectedService.secondarySkill}}</div>
+          <div ng-show="selectedService.readMusic">Read Music: {{selectedService.readMusic}}</div>
+          <div ng-show="selectedService.detail">Details: {{selectedService.detail}}</div>
+          <div><a ng-href="#/talent/services/edit/{{selectedService.id}}" class="btn btn-primary topper" type=""><i class="fa fa-wrench" aria-hidden="true"></i><p class="note"> edit</p></a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+
+<div class="container">
+  <div class="row">
+    <img class="col-sm-12 text-center" ng-show="selectedService.image" ng-src="{{selectedService.image}}">
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.title">Service Title: {{selectedService.title}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.locationCity">{{selectedService.locationCity}}, {{selectedService.locationState}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.detail">Details: {{selectedService.detail}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.rate">Service Rate: {{selectedService.rate}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.gender">Gender: {{selectedService.gender}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.mainGenre">Main Genre: {{selectedService.mainGenre}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.secondaryGenre">Secondary Genre: {{selectedService.secondaryGenre}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.mainSkill">Main Skill: {{selectedService.mainSkill}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center" ng-show="selectedService.secondarySkill">Secondary Skill: {{selectedService.secondarySkill}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center"><a ng-href="#/talent/services/edit/{{selectedService.id}}" class="btn btn-primary" type=""><i class="fa fa-wrench" aria-hidden="true"></i><p class="note"> edit</p></a></div>
+  </div>
+</div> -->

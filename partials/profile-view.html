@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="card card-block">
+      <div class="row">
+
+        <img class="col-sm-3 text-center" ng-show="selectedUser.image" ng-src="{{selectedUser.image}}">
+        <div class="col-sm-6">
+          <h3 ng-show="selectedUser.firstName">{{selectedUser.firstName}} {{selectedUser.lastName}}</h3>
+          <div ng-show="selectedUser.city" class="bottomMarg">{{selectedUser.city}}, {{selectedUser.state}}</div>
+          <p ng-show="selectedUser.professionalBio">{{selectedUser.professionalBio}}</p>
+          <div class="detail" ng-show="selectedUser.telephone">Telephone: {{selectedUser.telephone}}</div>
+          <div class="detail" ng-show="selectedUser.yearsInBusiness">Years in the business: {{selectedUser.yearsInBusiness}}</div>
+          <div class="detail" ng-show="selectedUser.primaryGenre">Primary Genre: {{selectedUser.primaryGenre}}</div>
+          <div class="detail" ng-show="selectedUser.secondaryGenre">Secondary Genre: {{selectedUser.secondaryGenre}}</div>
+          <div class="detail" ng-show="selectedUser.industryRating">Industry Rating: {{selectedUser.industryRating}}/5</div>
+          <div class="topper"><a ng-href="#/talent/profile/edit" class="btn btn-primary"><i class="fa fa-wrench" aria-hidden="true"></i><p class="note"> edit</p></a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

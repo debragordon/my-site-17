@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row text-center">
+    <h3 class="text-center">Available Gigs</h3>
+  </div>
+  <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+          <div class="input-group">
+                  <span class="input-group-btn">
+                      <button class="btn btn-default">
+                          <i class="fa fa-search"></i>
+                      </button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Search Location, Music Genre, Skills Needed ..." ng-model="searchText">
+          </div>
+      </div>
+  </div>
+
+  <div class="row topper">
+      <div ng-repeat="job in jobs | filter: searchText">
+
+      <div class="col-sm-3">
+        <div class="card card-block topper">
+          <div class="cardPhoto">
+            <img class="col-sm-12 bottomMarg" ng-show="job.image" ng-src="{{job.image}}">
+          </div>
+          <div class="text-center">
+            <h5 class="card-title text-center">{{job.title}}</h5>
+            <h6 class="card-text text-center">{{job.locationCity}}, {{job.locationState}} <i class="fa fa-headphones" aria-hidden="true" ng-show="job.interested" class="ng-hide"></i></h6>
+            <a ng-href="#/talent/jobs/{{job.id}}" class="btn btn-warning clickThis text-center"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

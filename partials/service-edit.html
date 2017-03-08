@@ -1,0 +1,104 @@
+  <div class="container">
+    <div class="row">
+      <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Talent Title</label>
+        <div class="col-xs-10">
+          <input class="form-control" type="text" placeholder="Title" ng-model="selectedService.title">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">Gender</label>
+        <div class="col-xs-10">
+          <input class="form-control" type="text" placeholder="Gender" ng-model="selectedService.gender">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">City</label>
+        <div class="col-xs-10">
+          <input class="form-control" type="text" placeholder="City" ng-model="selectedService.locationCity">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-xs-2 col-form-label">State</label>
+        <div class="col-xs-10">
+          <input class="form-control" type="text" placeholder="State" ng-model="selectedService.locationState">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="exampleInputAmount">What Do You Charge? </label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" class="form-control" placeholder="Rate for Service" ng-model="selectedService.rate">
+          <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="mainSkill">Main Skill: </label>
+        <select class="custom-select" name="mainSkill" ng-model="selectedService.mainSkill">
+          <option>---</option>
+          <option value="Lead">Lead Vocals</option>
+          <option value="BGVs">BGVs</option>
+          <option value="Choral">Choral</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="secondarySkill">Secondary Skill: </label>
+        <select class="custom-select" name="secondarySkill" ng-model="selectedService.secondarySkill">
+          <option >---</option>
+          <option value="Lead">Lead Vocals</option>
+          <option value="BGVs">BGVs</option>
+          <option value="Choral">Choral</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="mainGenre">Main Genre: </label>
+        <select class="custom-select" name="mainGenre" ng-model="selectedService.mainGenre">
+          <option>---</option>
+          <option value="Country">Country</option>
+          <option value="Pop">Pop</option>
+          <option value="Rock">Rock</option>
+          <option value="Gospel">Gospel</option>
+          <option value="Jazz">Jazz</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="secondaryGenre">Secondary Genre: </label>
+        <select class="custom-select" name="secondaryGenre" ng-model="selectedService.secondaryGenre">
+          <option>---</option>
+          <option value="Country">Country</option>
+          <option value="Pop">Pop</option>
+          <option value="Rock">Rock</option>
+          <option value="Gospel">Gospel</option>
+          <option value="Jazz">Jazz</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="exampleInputAmount">Can Read Music </label>
+        <select class="custom-select">
+          <option selected>---</option>
+          <option>Yes, sheet music & Nashville Numbers</option>
+          <option>Yes, sheet music</option>
+          <option>Yes, Nashville Numbers</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="col-xs-2 col-form-label" for="exampleInputAmount">Tell Us More: </label>
+          <div class="col-xs-10">
+          <textarea class="form-control" rows="3" ng-model="selectedService.detail" placeholder="tell me more ..."></textarea>
+          </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+          <button type="submit" class="btn btn-primary" ng-click="updateThisService()"><i class="fa fa-floppy-o" aria-hidden="true"></i><p class="note"> update</p></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+

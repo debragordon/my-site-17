@@ -1,0 +1,26 @@
+<nav class="navbar" ng-controller="NavCtrl" ng-show="isLoggedIn()">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center topper">
+        <a ng-href="#/talent/home" title=""><i class="fa fa-headphones fa-5x"></i> <div class="none">GigGetter</div></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 text-center">
+        <a ng-href="#/talent/profile" class="btn btn-info btn-block btn-lg">My Profile</a>
+      </div>
+      <div class="col-sm-3 text-center">
+        <a ng-href="#/talent/services/all" class="btn btn-info btn-block btn-lg">My Talents</a>
+      </div>
+      <div class="col-sm-3 text-center">
+        <a ng-href="#/talent/myjobs" class="btn btn-info btn-block btn-lg">My Gigs</a>
+      </div>
+      <div class="col-sm-3 text-center">
+        <button class="btn btn-default btn-block btn-lg" ng-click="logoutUser()"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--
+<img src="/images/filler-logo.jpg" class="small" alt="app-home"> -->

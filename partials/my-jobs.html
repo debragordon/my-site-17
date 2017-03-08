@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div class="row text-center">
+    <h2>Interested Gigs</h2>
+<!--     <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs"> -->
+    <div class="col-sm-3" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:false}">
+      <div class="card card-block">
+        <img class="col-sm-12 bottomMarg" ng-show="interestedJob.image" ng-src="{{interestedJob.image}}">
+        <h5 class="card-title">{{interestedJob.title}}</h5>
+        <a ng-href="#/talent/jobs/{{interestedJob.jobId}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
+        <a ng-click="removeInterest(interestedJob)" class="btn btn-danger"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> remove interest</p></a>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" ng-model="interestedJob.isCompleted" ng-change="inputChange(interestedJob)">
+      Got the Gig
+    </label>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <h2>Completed Gigs</h2>
+<!--     <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs}"> -->
+    <div class="col-sm-2" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:true}">
+      <div class="card card-block">
+        <h5 class="card-title">{{interestedJob.title}}</h5>
+        <a ng-href="#/talent/jobs/{{interestedJob.jobId}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
+<!--         <a ng-click="" class="btn btn-warning">Delete Job</a> -->
+      </div>
+    </div>
+  </div>
+
+</div>
